@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" href="CSS/contact.css" />
+
+    <!-- Linking Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="left">
+        <a href="homepage.html" target="_blank">TayBlogs</a>
+      </div>
+      <div class="mid">
+        <ul>
+          <li><a href="homepage.html" target="_blank">Home</a></li>
+          <li><a href="article.html" target="_blank">Explore</a></li>
+          <li><a href="account.html" target="_blank">Account </a></li>
+          <li>
+            <a href="contact.html" target="_blank" class="active">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <input placeholder="&#128269; Search Article" type="text" />
+      </div>
+    </header>
+    <div class="div1">
+      <h3 class="head">Feel free to contact us !!</h3>
+      <p class="info0">Fill out the form and we will reach out to you :-</p>
+      <div class="form-contact">
+        <div class="form-box">
+          <p>Name:</p>
+          <input id="box" type="text" placeholder="Full name" />
+        </div>
+        <div class="form-box">
+          <p>Age:</p>
+          <input id="box" type="number" placeholder="Enter age" />
+        </div>
+        <div class="form-box">
+          <p>E-mail:</p>
+          <input id="box" type="text" placeholder="✉ Enter E-mail" />
+        </div>
+        <div class="form-box">
+          <p>Phone number:</p>
+          <input id="box" type="number" placeholder="### ### ####" />
+        </div>
+        <div class="form-box">
+          <p>Message:</p>
+          <textarea
+            class="box1"
+            name="text"
+            cols="30"
+            rows="50"
+            placeholder="How may we help you ?"
+          ></textarea>
+        </div>
+
+        <div class="form-box">
+          <button class="btn" type="button" onclick="func()">Submit</button>
+          <p id="demo">Sit tight! We will reach out to you soon.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://www.instagram.com" target="_blank"
+        ><img src="Images/ig.jpg" class="ig"
+      /></a>
+      <a href="https://www.twitter.com" target="_blank"
+        ><img src="Images/tw.png" class="tw"
+      /></a>
+      <a href="https://www.youtube.com" target="_blank"
+        ><img src="Images/yt.png" class="yt"
+      /></a>
+      <a href="https://www.facebook.com" target="_blank"
+        ><img src="Images/fb.png" class="fb"
+      /></a>
+      <p><a href="copyright.html" target="_blank"> &#169; TayBlogs </a></p>
+    </footer>
+
+    <!-- javascript file -->
+    <script src="JavaScript/contact.js"></script>
+  </body>
+</html>

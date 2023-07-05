@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo Paaji 2", cursive;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+::selection {
+  background-color: #127e1098;
+  color: rgb(229, 237, 228);
+}
+
+/* Navigation Bar styling */
+header {
+  font-weight: 700;
+  padding-top: 20px;
+  background-color: rgb(0, 0, 0);
+}
+
+.left {
+  font-family: "Courgette", cursive;
+  font-size: 35px;
+  text-shadow: 3px 3px 1px #817e7e;
+  width: 100%;
+  text-align: center;
+}
+
+.left a {
+  text-decoration: none;
+  color: white;
+}
+
+.mid {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.mid ul {
+  list-style: none;
+}
+
+.mid ul li {
+  display: inline;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mid a {
+  color: white;
+  text-decoration: none;
+}
+.mid .active {
+  color: grey;
+}
+.mid ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.right {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.right input {
+  background-color: #efefef;
+  border: 0px;
+  border-radius: 20px;
+  padding: 6px;
+  width: 20%;
+  border-right: 3px rgba(128, 128, 128, 0.75) solid;
+  border-bottom: 3px rgba(128, 128, 128, 0.75) solid;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 14px;
+}
+
+/* main body styling */
+/* Introduction Part */
+.intro {
+  text-align: center;
+  padding-top: 8em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("../Images/laptop.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.div1 {
+  font-family: "Italianno", cursive;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+}
+
+.div2 {
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-size: 6.5em;
+  line-height: 1em;
+  margin-bottom: 25px;
+}
+
+.intro .p1 {
+  background-color: #913838;
+  width: 50%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.intro .p2 {
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  padding-bottom: 5em;
+  font-size: 20px;
+}
+
+/* Suggested-Posts Part */
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url("../Images/bg2.jpg");
+  text-align: center;
+  padding-top: 1em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 50px;
+  align-self: center;
+  margin-top: 1px;
+  text-align: center;
+}
+
+.div3 {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.post img {
+  padding: 0px;
+  height: 60%;
+  width: 300px;
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.post {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.content {
+  align-self: center;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 0px;
+}
+.content a {
+  text-decoration: none;
+  color: white;
+}
+
+.lastpost {
+  margin-bottom: 80px;
+}
+
+/* Subscription Part */
+.main button {
+  display: block;
+  margin: auto;
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: bold;
+  background-color: rgb(22, 149, 35);
+  color: white;
+  margin-bottom: 40px;
+}
+.main button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 0px 5px 4px rgb(128, 185, 141);
+}
+
+.box {
+  background-color: white;
+  color: black;
+  width: 450px;
+  height: 370px;
+  margin: auto;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 3px 5px 10px grey;
+}
+.close {
+  font-weight: bolder;
+  font-size: 30px;
+  float: right;
+  margin-right: 18px;
+  cursor: pointer;
+}
+.close:hover {
+  color: #4b4b4b;
+}
+.env {
+  width: 50%;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.box p {
+  margin: 0px;
+  font-weight: bold;
+}
+.box .p1 {
+  font-size: 20px;
+  color: #23b6e6;
+}
+.box .p2 {
+  font-size: 28px;
+  margin-top: -12px;
+  color: #023e8a;
+}
+.box .p3 {
+  font-size: 17px;
+  margin-top: 10px;
+  color: #0077b6;
+}
+.box form {
+  margin-top: 20px;
+}
+.box input {
+  background-color: #03045e;
+  border-radius: 20px;
+}
+
+.email {
+  width: 55%;
+  border: none;
+  background-color: #03045e;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.email::placeholder {
+  color: rgba(212, 211, 211, 0.888);
+}
+
+.subs {
+  background-color: #3638ac;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.subs:hover {
+  opacity: 0.85;
+}
+
+.subs:active {
+  opacity: 0.75;
+}
+
+/* Footer styling */
+footer {
+  background-color: rgb(16, 16, 85);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding-top: 40px;
+  margin-top: 1px;
+}
+
+.ig {
+  border-radius: 50%;
+}
+.yt {
+  width: 90px;
+  padding-bottom: 2px;
+}
+
+footer img {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 80px;
+  margin-top: 20px;
+}
+footer img:hover {
+  opacity: 0.7;
+}
+footer p {
+  padding-top: 25px;
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: rgb(162, 214, 232);
+  text-decoration: underline;
+}
+
+footer p a:active {
+  color: #e1ecf3;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  .div2 {
+    font-size: 15vw;
+  }
+  .div1,
+  .div3 {
+    font-size: 8vw;
+  }
+  .p1,
+  .p2 {
+    font-size: 3.5vw;
+  }
+  .post img {
+    display: block;
+  }
+
+  .content {
+    clear: left;
+  }
+  .right input {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  footer img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .box .email {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .box {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .post img {
+    width: 60%;
+  }
+}

@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #afddf0e3;
+  color: rgb(0, 0, 0);
+}
+
+/* Navigation Bar styling */
+header {
+  font-family: "Baloo Paaji 2", cursive;
+  font-weight: 700;
+  padding-top: 5px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.left {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  font-size: 35px;
+  text-shadow: 3px 3px 1px #817e7e;
+  font-family: "Courgette", cursive;
+}
+
+.left a {
+  text-decoration: none;
+  color: white;
+}
+
+.mid {
+  display: block;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 1px;
+}
+
+.mid ul {
+  list-style: none;
+}
+
+.mid ul li {
+  display: inline;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mid a {
+  color: white;
+  text-decoration: none;
+}
+.mid .active {
+  color: grey;
+}
+.mid ul li a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.searchbox {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 17px;
+  align-self: center;
+  border: 0px;
+}
+
+.searchbox input {
+  background-color: #efefef;
+  border: 0px;
+  border-radius: 20px;
+  padding: 5px;
+  width: 80%;
+  border-right: 3px rgba(128, 128, 128, 0.75) solid;
+  border-bottom: 3px rgba(128, 128, 128, 0.75) solid;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 12px;
+}
+
+@media only screen and (max-width: 850px) {
+  header {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left {
+    width: 99%;
+    text-align: center;
+    margin-left: -38px;
+  }
+  .mid {
+    width: 95%;
+    margin-top: 3em;
+    margin-right: 40px;
+  }
+  .searchbox {
+    width: 100%;
+    margin-top: 5.9em;
+    text-align: center;
+    background-color: black;
+    padding-bottom: 8px;
+  }
+  .searchbox input {
+    width: 32%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .mid {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .searchbox {
+    margin-top: 7.2em;
+    padding: 5px;
+  }
+  .searchbox input {
+    width: 50%;
+  }
+  footer img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 290px) {
+  .mid {
+    margin-left: 10px;
+  }
+  .searchbox {
+    margin-top: 10.5em;
+  }
+  .searchbox input {
+    width: 70%;
+  }
+}
+
+/* main body styling */
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.image {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.text {
+  margin-left: 60px;
+  margin-right: 60px;
+  columns: 2;
+  text-align: justify;
+  column-gap: 50px;
+  margin-bottom: 60px;
+}
+
+div span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+div p {
+  font-size: 17px;
+}
+
+/* Footer styling */
+footer {
+  background-color: rgb(16, 16, 85);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding-top: 50px;
+  margin-top: 80px;
+}
+
+.ig {
+  border-radius: 50%;
+}
+.yt {
+  width: 50px;
+  padding-bottom: 2px;
+}
+
+footer img {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 40px;
+}
+footer img:hover {
+  opacity: 0.7;
+}
+footer p {
+  padding-top: 25px;
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+footer p a:hover {
+  color: rgb(162, 214, 232);
+  text-decoration: underline;
+}
+
+footer p a:active {
+  color: #e1ecf3;
+}
